@@ -1,0 +1,151 @@
+.wallet {
+    margin-top: 32px;
+}
+
+.income {
+
+    &__header {
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: $headers_text;
+        margin-bottom: 16px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        color: $content_text;
+        
+        
+    }
+
+    &__item {
+        width: 21%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .item {
+
+        &__header {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        &__icon {
+            width: 70px;
+            height: 70px;
+            background-color: $income_icons_bg;
+            border-radius: 50%;
+            display: flex;
+            margin: 4px 0;
+
+            &_svg {
+                margin: 0 auto;
+            }
+        }
+
+        &__bottom {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+
+        }
+    }
+
+}
+
+.wallets {
+    padding-left: 90px;
+    padding-right: 112px;
+
+    &__wallets {
+
+        .item {
+
+            &__header {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            &__icon {
+                width: 70px;
+                height: 70px;
+                background-color: $wallets_icons_bg;
+                border-radius: 50%;
+                display: flex;
+                margin: 4px 0;
+
+                &_svg {
+                    margin: 0 auto;
+                }
+            }
+
+            &__bottom {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+
+            }
+        }
+    }
+}
+
+.wallets {
+
+    // .wallets__expenses
+
+    &__expenses {    
+
+    .income {
+        &__items {
+            flex-wrap: wrap;
+            row-gap: 24px;
+        }
+
+    }
+
+    .item {
+        
+
+        &__header {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        &__icon {
+            width: 70px;
+            height: 70px;
+            background-color: $expenses_icons_bg;
+            border-radius: 50%;
+            display: flex;
+            margin: 4px 0;
+
+            &_svg {
+                margin: 0 auto;
+            }
+        }
+
+        &__bottom {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+
+        }
+    }
+}
+}
+
+
+
+
+
+

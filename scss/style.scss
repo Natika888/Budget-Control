@@ -1,0 +1,40 @@
+//<Шрифт по умолчанию>==========================================================================================
+$fontFamily: 'Space Grotesk', sans-serif;
+$fontSize: 20;
+//</Шрифт по умолчанию>==========================================================================================
+
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: $fontFamily;
+    font-style: normal;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+
+
+@import "variables";
+@import "reset";
+@import "header";
+@import "mainHeader";
+@import "wallets";
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(100% - 440px);
+    padding-left: 440px;
+    background-color: $main_page_bg;
+}
+
+
+
