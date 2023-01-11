@@ -96,8 +96,10 @@ h6 {
   display: flex;
   width: 440px;
   flex: 0 0 440px;
-  height: 100%;
-  position: absolute;
+  max-height: 100vh;
+  overflow: auto;
+  position: fixed;
+  height: 100vh;
   left: 0;
   top: 0;
   padding-left: 112px;
@@ -116,8 +118,9 @@ h6 {
 }
 .header__main {
   display: flex;
-  flex-direction: column;
+  height: 100vh;
   width: 100%;
+  flex-wrap: wrap;
 }
 .header__logo-text {
   font-family: "Space Grotesk", sans-serif;
@@ -131,6 +134,9 @@ h6 {
 .header__logo {
   display: flex;
   align-items: center;
+}
+.header__menu {
+  flex: 0 0 100%;
 }
 .menu__icon {
   display: none;
@@ -174,6 +180,7 @@ h6 {
   padding-left: 16px;
 }
 .menu__link {
+  display: block;
   color: #EDF1F7;
   font-weight: 400;
   font-size: 20px;
@@ -186,6 +193,13 @@ h6 {
   margin-top: 19px;
 }
 
+.menu__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
 .main__header .menu__body {
   width: 100%;
   padding-right: 112px;
@@ -196,6 +210,7 @@ h6 {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   width: 100%;
 }
 .main__header .menu__item {
@@ -203,6 +218,18 @@ h6 {
 }
 .main__header .menu__link {
   color: #0B151D;
+}
+
+.item__help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #6180ED;
+  border-radius: 50%;
+  text-align: center;
+  padding-left: 0;
 }
 
 .wallet {

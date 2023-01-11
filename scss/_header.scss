@@ -2,8 +2,10 @@
     display: flex;
     width: 440px;
     flex: 0 0 440px;
-    height: 100%;
-    position: absolute;
+    max-height: 100vh;
+    overflow: auto;
+    position: fixed;
+    height: 100vh;
     left: 0;
     top: 0;
     padding-left: 112px;
@@ -23,8 +25,9 @@
 
     &__main {
         display: flex;
-        flex-direction: column;
+        height: 100vh;
         width: 100%;
+        flex-wrap: wrap;
     }
 
     &__logo-text {
@@ -43,7 +46,10 @@
         align-items: center;
     }
 
-    &__menu {}
+    &__menu {
+        .menu { }
+        flex: 0 0 100%;
+    }
 }
 
 .menu {
@@ -102,6 +108,7 @@
     }
 
     &__link {
+        display: block;
         color: $main_page_bg;
         font-weight: 400;
         font-size: 20px;
