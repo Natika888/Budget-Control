@@ -31,11 +31,12 @@
     }
 
     &__item {
-        margin: 0;
+        margin: 0 12px;
     }
 
     &__link {
         color: $headers_text;
+        
     }
 
 }
@@ -51,5 +52,26 @@
         border-radius: 50%;
         text-align: center;        
         padding-left: 0;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    &__quit {
+        position: relative;
+        border: 2px solid $wallets_icons_bg;
+        border-radius: 10px;
+        padding: 10px 10px 10px 42px;
+
+        
+    }
+}
+
+button.menu__link {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: url(../img/exit.svg);
+        left: -26px;
+        top: 3px;
     }
 }

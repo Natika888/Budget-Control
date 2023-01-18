@@ -176,8 +176,19 @@ h6 {
   flex-direction: column;
 }
 .menu__item {
+  display: flex;
+  align-items: center;
   margin: 32px 0;
   padding-left: 16px;
+}
+.menu__item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  fill: #fff;
+}
+.menu__item img:hover {
+  filter: invert(1);
 }
 .menu__link {
   display: block;
@@ -214,7 +225,7 @@ h6 {
   width: 100%;
 }
 .main__header .menu__item {
-  margin: 0;
+  margin: 0 12px;
 }
 .main__header .menu__link {
   color: #0B151D;
@@ -230,6 +241,24 @@ h6 {
   border-radius: 50%;
   text-align: center;
   padding-left: 0;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.item__quit {
+  position: relative;
+  border: 2px solid #6180ED;
+  border-radius: 10px;
+  padding: 10px 10px 10px 42px;
+}
+
+button.menu__link {
+  position: relative;
+}
+button.menu__link::before {
+  position: absolute;
+  content: url(../img/exit.svg);
+  left: -26px;
+  top: 3px;
 }
 
 .wallet {
