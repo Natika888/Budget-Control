@@ -198,36 +198,35 @@ h6 {
   line-height: 26px;
 }
 
-.main__header {
+.main__top {
   display: flex;
   width: 100%;
   margin-top: 19px;
 }
 
-.menu__avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid #000000;
-}
-
-.main__header .menu__body {
+.top {
   width: 100%;
   padding-right: 112px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.main__header .menu__list {
+.top__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+.top__list {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
 }
-.main__header .menu__item {
+.top__item {
   margin: 0 12px;
 }
-.main__header .menu__link {
+.top__link {
   color: #0B151D;
 }
 
@@ -251,10 +250,10 @@ h6 {
   padding: 10px 10px 10px 42px;
 }
 
-button.menu__link {
+button.top__link {
   position: relative;
 }
-button.menu__link::before {
+button.top__link::before {
   position: absolute;
   content: url(../img/exit.svg);
   left: -26px;
