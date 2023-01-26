@@ -39,8 +39,8 @@
         }
 
         &__icon {
-            width: 70px;
-            height: 70px;
+            width: 65px;
+            height: 65px;
             background-color: $income_icons_bg;
             border-radius: 50%;
             display: flex;
@@ -76,8 +76,8 @@
             }
 
             &__icon {
-                width: 70px;
-                height: 70px;
+                width: 65px;
+                height: 65px;
                 background-color: $wallets_icons_bg;
                 border-radius: 50%;
                 display: flex;
@@ -102,7 +102,8 @@
 
     // .wallets__expenses
 
-    &__expenses {    
+    &__expenses {   
+        margin-bottom: 45px; 
 
     .income {
         &__items {
@@ -122,8 +123,8 @@
         }
 
         &__icon {
-            width: 70px;
-            height: 70px;
+            width: 65px;
+            height: 65px;
             background-color: $expenses_icons_bg;
             border-radius: 50%;
             display: flex;

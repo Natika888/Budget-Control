@@ -105,17 +105,33 @@
     &__item {
         display: flex;
         align-items: center;
-        margin: 32px 0;
+        margin: 22px 0;
         padding-left: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+            // filter: invert(1);
+            background-color: $main_page_bg;
+            
+            .menu__link {
+                color: $headers_text;
+            }
+            img {
+                filter: invert(1);
+            }
+        }
 
         & img {
             width: 20px;
             height: 20px;
             margin-right: 10px;
             fill: #fff;
-            &:hover {
-                filter: invert(1);
-            }
+            // &:hover {
+            //     filter: invert(1);
+            // }
         }
     }
 

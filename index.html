@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Budget Control</title>
 </head>
-<body>
-    <div class="wrapper">
+<body>    
         <section class="sidebar">
             <header class="header">        
                 <div class="header__main">
@@ -61,198 +60,202 @@
             </header>
         </section>
     
-        <main class="main">
-            <div class="main__top top">
-                <ul class="top__list">
-                    <li class="top__item">
-                        <a href="#" class="top__link"><img src="./img/avatar.png" alt="Avatar" class="top__avatar"></a>
-                    </li>
-                    <li class="top__item item__help">
-                        <a href="#" class="top__link">?</a>
-                    </li>
-                    <li class="top__item item__quit">
-                        <button href="#" class="top__link">Quit</button>
-                    </li>
-                </ul>
+        <div class="wrapper">
+            <main class="main">
+                <div class="main__top top">
+                    <ul class="top__list">
+                        <li class="top__item">
+                            <a href="#" class="top__link"><img src="./img/avatar.png" alt="Avatar" class="top__avatar"></a>
+                        </li>
+                        <li class="top__item item__help">
+                            <a href="#" class="top__link">?</a>
+                        </li>
+                        <li class="top__item item__quit">
+                            <button href="#" class="top__link">Quit</button>
+                        </li>
+                    </ul>
+                
+                </div>
+                <section class="wallets">
+                    <div class="wallets__income income wallet">
+                        <h2 class="income__header">Sources of Income</h2>
+                        <div class="income__items">
+                            <div class="income__item">
+                                <span class="item__header">Salary</span>
+                                <div class="item__icon">
+                                    <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
+                                </div>
+                                <!-- Переделать -->
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Rent</span>
+                                <div class="item__icon">
+                                    <img src="./img/house.svg" alt="House" class="item__icon_svg">
+                                </div>
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Salary</span>
+                                <div class="item__icon">
+                                    <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
+                                </div>
+                                <!-- Переделать -->
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Rent</span>
+                                <div class="item__icon">
+                                    <img src="./img/house.svg" alt="House" class="item__icon_svg">
+                                </div>
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wallets__wallets wallet">
+                        <h2 class="income__header">Wallets</h2>
+                        <div class="income__items">
+                            <div class="income__item">
+                                <span class="item__header">Cash</span>                         
+                                <div class="item__icon">
+                                    <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
+                                </div>
+                                <!-- Переделать -->
+                                <span class="item__bottom">122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Privatebank</span>
+                                <div class="item__icon">
+                                    <img src="./img/house.svg" alt="House" class="item__icon_svg">
+                                </div>
+                                <span class="item__bottom">122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Monobank</span>
+                                <div class="item__icon">
+                                    <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
+                                </div>
+                                <!-- Переделать -->
+                                <span class="item__bottom">122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Bottle</span>
+                                <div class="item__icon">
+                                    <img src="./img/house.svg" alt="House" class="item__icon_svg">
+                                </div>
+                                <span class="item__bottom">122 000 UAH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wallets__expenses wallet">
+                        <h2 class="income__header">Expenses</h2>
+                        <div class="income__items">
+                            <div class="income__item">
+                                <span class="item__header">Coffee</span>
+                                <div class="item__icon">
+                                    <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
+                                </div>
+                                <!-- Переделать -->
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Sport</span>
+                                <div class="item__icon">
+                                    <img src="./img/house.svg" alt="House" class="item__icon_svg">
+                                </div>
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Cat</span>
+                                <div class="item__icon">
+                                    <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
+                                </div>
+                                <!-- Переделать -->
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Food</span>
+                                <div class="item__icon">
+                                    <img src="./img/house.svg" alt="House" class="item__icon_svg">
+                                </div>
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Coffee</span>
+                                <div class="item__icon">
+                                    <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
+                                </div>
+                                <!-- Переделать -->
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Sport</span>
+                                <div class="item__icon">
+                                    <img src="./img/house.svg" alt="House" class="item__icon_svg">
+                                </div>
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Cat</span>
+                                <div class="item__icon">
+                                    <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
+                                </div>
+                                <!-- Переделать -->
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Food</span>
+                                <div class="item__icon">
+                                    <img src="./img/house.svg" alt="House" class="item__icon_svg">
+                                </div>
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Coffee</span>
+                                <div class="item__icon">
+                                    <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
+                                </div>
+                                <!-- Переделать -->
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Sport</span>
+                                <div class="item__icon">
+                                    <img src="./img/house.svg" alt="House" class="item__icon_svg">
+                                </div>
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Cat</span>
+                                <div class="item__icon">
+                                    <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
+                                </div>
+                                <!-- Переделать -->
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                            <div class="income__item">
+                                <span class="item__header">Food</span>
+                                <div class="item__icon">
+                                    <img src="./img/house.svg" alt="House" class="item__icon_svg">
+                                </div>
+                                <span class="item__bottom">122 000/122 000 UAH</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </main>
             
-            </div>
-            <section class="wallets">
-                <div class="wallets__income income wallet">
-                    <h2 class="income__header">Sources of Income</h2>
-                    <div class="income__items">
-                        <div class="income__item">
-                            <span class="item__header">Salary</span>
-                            <div class="item__icon">
-                                <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
-                            </div>
-                            <!-- Переделать -->
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Rent</span>
-                            <div class="item__icon">
-                                <img src="./img/house.svg" alt="House" class="item__icon_svg">
-                            </div>
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Salary</span>
-                            <div class="item__icon">
-                                <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
-                            </div>
-                            <!-- Переделать -->
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Rent</span>
-                            <div class="item__icon">
-                                <img src="./img/house.svg" alt="House" class="item__icon_svg">
-                            </div>
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="wallets__wallets wallet">
-                    <h2 class="income__header">Wallets</h2>
-                    <div class="income__items">
-                        <div class="income__item">
-                            <span class="item__header">Cash</span>                         
-                            <div class="item__icon">
-                                <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
-                            </div>
-                            <!-- Переделать -->
-                            <span class="item__bottom">122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Privatebank</span>
-                            <div class="item__icon">
-                                <img src="./img/house.svg" alt="House" class="item__icon_svg">
-                            </div>
-                            <span class="item__bottom">122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Monobank</span>
-                            <div class="item__icon">
-                                <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
-                            </div>
-                            <!-- Переделать -->
-                            <span class="item__bottom">122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Bottle</span>
-                            <div class="item__icon">
-                                <img src="./img/house.svg" alt="House" class="item__icon_svg">
-                            </div>
-                            <span class="item__bottom">122 000 UAH</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="wallets__expenses wallet">
-                    <h2 class="income__header">Expenses</h2>
-                    <div class="income__items">
-                        <div class="income__item">
-                            <span class="item__header">Coffee</span>
-                            <div class="item__icon">
-                                <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
-                            </div>
-                            <!-- Переделать -->
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Sport</span>
-                            <div class="item__icon">
-                                <img src="./img/house.svg" alt="House" class="item__icon_svg">
-                            </div>
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Cat</span>
-                            <div class="item__icon">
-                                <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
-                            </div>
-                            <!-- Переделать -->
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Food</span>
-                            <div class="item__icon">
-                                <img src="./img/house.svg" alt="House" class="item__icon_svg">
-                            </div>
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Coffee</span>
-                            <div class="item__icon">
-                                <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
-                            </div>
-                            <!-- Переделать -->
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Sport</span>
-                            <div class="item__icon">
-                                <img src="./img/house.svg" alt="House" class="item__icon_svg">
-                            </div>
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Cat</span>
-                            <div class="item__icon">
-                                <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
-                            </div>
-                            <!-- Переделать -->
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Food</span>
-                            <div class="item__icon">
-                                <img src="./img/house.svg" alt="House" class="item__icon_svg">
-                            </div>
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Coffee</span>
-                            <div class="item__icon">
-                                <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
-                            </div>
-                            <!-- Переделать -->
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Sport</span>
-                            <div class="item__icon">
-                                <img src="./img/house.svg" alt="House" class="item__icon_svg">
-                            </div>
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Cat</span>
-                            <div class="item__icon">
-                                <img src="./img/dollar.svg" alt="Dollar" class="item__icon_svg">
-                            </div>
-                            <!-- Переделать -->
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                        <div class="income__item">
-                            <span class="item__header">Food</span>
-                            <div class="item__icon">
-                                <img src="./img/house.svg" alt="House" class="item__icon_svg">
-                            </div>
-                            <span class="item__bottom">122 000/122 000 UAH</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <footer class="footer">
                 <div class="footer__left">
-                    <span class="left__text"></span>
+                    <span class="left__text">© Budget Control LLC</span>
                 </div>
                 <div class="footer__right">
-                    <p class="right__text"></p>
+                    <p class="right__text">Lorem ipsum dolor sit amet consectetur. Nisi platea adipiscing scelerisque donec consequat nullam . </p>
                 </div>
             </footer>
-        </main>
-    </div>
+        </div>
+    
 
     
 </body>

@@ -1,18 +1,34 @@
 .footer {
 
     display: flex;
-    height: 83px;
-    background-color: #fff;
+    height: 100%;
+    align-items: center;
+    flex: 0 1 auto;    
+    background-color: $income_icons_bg;
+    padding-left: 530px;
+    color: $main_page_bg;
 
     &__left {
-        &__text {
+        width: 30%;
+        & .left__text {
+            font-weight: 300;
+font-size: 14px;
+line-height: 18px;
         }
     }
 
     
 
     &__right {
-        &__text {
+        width: 70%;
+        padding-right: 112px;
+        & .right__text {
+            font-family: 'Space Grotesk';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 18px;
+            color: $main_page_bg;
         }
     }
 }
