@@ -188,6 +188,9 @@ h6 {
   margin: 22px 0;
   cursor: pointer;
 }
+.menu__item:hover {
+  border-radius: 10px 0 0 10px;
+}
 .menu__link {
   color: #EDF1F7;
   font-weight: 400;
@@ -215,7 +218,10 @@ h6 {
   background-color: #EDF1F7;
 }
 .menu__link:hover span {
-  color: #000;
+  color: #0B151D;
+}
+.menu__link:hover svg {
+  fill: #0B151D;
 }
 .menu__link:hover .menu__link {
   color: #0B151D;
@@ -229,12 +235,26 @@ h6 {
   display: block;
   width: 0px;
   height: 0px;
-  border: solid 21px #3c60d8;
+  border: solid 21px #3D60D8;
   border-left-color: transparent;
   border-bottom-color: transparent;
   position: absolute;
-  bottom: -43px;
-  right: -1px;
+  bottom: -42.5px;
+  right: 0px;
+  z-index: 1;
+  border-radius: 23px;
+}
+.menu__item:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: solid 21px #3D60D8;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  top: -42px;
+  right: 0px;
   z-index: 1;
   border-radius: 23px;
 }
@@ -248,7 +268,20 @@ h6 {
   border-left-color: transparent;
   border-bottom-color: transparent;
   position: absolute;
-  bottom: -20px;
+  bottom: -19px;
+  right: 0;
+}
+
+.menu__item .menu__link:hover:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: solid 10px #EDF1F7;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  top: -19px;
   right: 0;
 }
 
