@@ -17,6 +17,10 @@ body {
   height: 100%;
 }
 
+.svgs {
+  display: none;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -182,33 +186,81 @@ h6 {
   display: flex;
   align-items: center;
   margin: 22px 0;
-  padding-left: 16px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
   cursor: pointer;
 }
-.menu__item:hover {
-  background-color: #EDF1F7;
-}
-.menu__item:hover .menu__link {
-  color: #0B151D;
-}
-.menu__item:hover img {
-  filter: invert(1);
-}
-.menu__item img {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  fill: #fff;
-}
 .menu__link {
-  display: block;
   color: #EDF1F7;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  padding-left: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px 0 0 10px;
+}
+.menu__link svg {
+  flex: 0 0 22px;
+}
+.menu__link svg {
+  width: 22px;
+  height: 20px;
+  margin-right: 10px;
+  fill: #EDF1F7;
+  display: block;
+}
+.menu__link:hover {
+  background-color: #EDF1F7;
+}
+.menu__link:hover span {
+  color: #000;
+}
+.menu__link:hover .menu__link {
+  color: #0B151D;
+}
+
+.menu__item {
+  position: relative;
+}
+.menu__item:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: solid 21px #3c60d8;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  bottom: -43px;
+  right: -1px;
+  z-index: 1;
+  border-radius: 23px;
+}
+
+.menu__item .menu__link:hover:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: solid 10px #EDF1F7;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+}
+
+a.menu__link {
+  display: flex;
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.menu__item:hover {
+  background-color: #EDF1F7;
+  position: relative;
 }
 
 .main__top {
@@ -220,6 +272,8 @@ h6 {
 .top {
   width: 100%;
   padding-right: 112px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .top__avatar {
   width: 44px;

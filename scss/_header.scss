@@ -106,41 +106,91 @@
         display: flex;
         align-items: center;
         margin: 22px 0;
-        padding-left: 16px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 10px;
         cursor: pointer;
 
-        &:hover {
-            // filter: invert(1);
-            background-color: $main_page_bg;
-            
-            .menu__link {
-                color: $headers_text;
-            }
-            img {
-                filter: invert(1);
-            }
-        }
-
-        & img {
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-            fill: #fff;
-            // &:hover {
-            //     filter: invert(1);
-            // }
-        }
+        
     }
 
     &__link {
-        display: block;
+        // display: block;
         color: $main_page_bg;
         font-weight: 400;
         font-size: 20px;
         line-height: 26px;
+        display: flex;
+        align-items: baseline;
+        // align-items: center;
+        width: 100%;
+        padding-left: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius:10px 0 0 10px;
+        svg{
+            flex:0 0 22px;
+        }
+        & svg {
+            width: 22px;
+            height: 20px;
+            margin-right: 10px;
+            fill: $main_page_bg;
+            display: block;
+        }
+        &:hover {            
+            background-color: $main_page_bg;
+            span{
+                color: #000;
+            }
+            
+            .menu__link {
+                color: $headers_text;
+            }
+            // & svg path{
+            //     fill: rgb(0, 0, 0);
+            // }
+        }
+
         
     }
+}
+.menu__item{
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 0px;
+        border: solid 21px #3c60d8;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        position: absolute;
+        bottom: -43px;
+        right: -1px;
+        z-index: 1;
+        border-radius: 23px;
+    }
+}
+.menu__item .menu__link:hover:before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: solid 10px #EDF1F7;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+}
+
+a.menu__link {
+    display: flex;
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+
+
+.menu__item:hover {
+    background-color: #EDF1F7;
+    position: relative;
 }
